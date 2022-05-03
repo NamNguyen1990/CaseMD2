@@ -1,7 +1,7 @@
 package Case;
 
 public class Phong {
-    private int phongSo = 0;
+    private int phongSo;
     private String loaiPhong;
     private int giaPhong;
     private String trangThai;

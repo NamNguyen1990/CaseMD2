@@ -35,6 +35,19 @@ public class QuanLyPhong {
         }
     }
 
+    public void timKiemPhongSo(int phongSo) {   // Cái này trả về thông tin (hiển thị luôn thông tin) phục vụ cho tìm kiếm theo số Phòng
+        boolean check = false;
+        for (int i=0; i<phongList.size(); i++) {
+            if (phongList.get(i).getPhongSo() == phongSo) {
+                System.out.println(phongList.get(i));
+                check = true;
+            }
+        }
+        if (check == false) {
+            System.out.println(ANSI_RED + "Không có Phòng nào có số này" + ANSI_RESET);
+        }
+    }
+
 
 
 
