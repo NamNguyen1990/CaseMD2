@@ -1,11 +1,12 @@
 package Case;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class QuanLyPhong {
 
-    static List<Phong> phongList = new ArrayList<>();
+    public static List<Phong> phongList = new ArrayList<>();
 
     public static final String CON = "Còn Phòng";
     public static final String HET = "Hết Phòng";
@@ -19,6 +20,12 @@ public class QuanLyPhong {
     }
 
     static {
+
+        try {
+            QuanLyPhong.setPhongList(GhiDocFile.readFromFile("KtraMD2.csv",QuanLyPhong.phongList));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
 
     }
 
@@ -126,24 +133,6 @@ public class QuanLyPhong {
             System.out.println(ANSI_BLUE + "Bạn đã cập nhật thành công!" + ANSI_RESET);
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     public static final String ANSI_CYAN = "\u001B[36m";
     public static final String ANSI_BLUE = "\u001B[34m";

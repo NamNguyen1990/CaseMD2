@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Main {
+public class MainPhong {
     public static void main(String[] args) throws IOException {
         QuanLyPhong quanLyPhong = new QuanLyPhong();
 

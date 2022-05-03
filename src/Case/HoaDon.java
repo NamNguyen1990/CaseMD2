@@ -1,6 +1,7 @@
 package Case;
 
 public class HoaDon {
+    private String ten;
     private double tgVao;
     private double tgRa;
     private double tAnUong;
@@ -9,11 +10,20 @@ public class HoaDon {
     public HoaDon() {
     }
 
-    public HoaDon(double tgVao, double tgRa, double tAnUong, Phong phong) {
+    public HoaDon(String ten, double tgVao, double tgRa, double tAnUong, Phong phong) {
+        this.ten = ten;
         this.tgVao = tgVao;
         this.tgRa = tgRa;
         this.tAnUong = tAnUong;
         this.phong = phong;
+    }
+
+    public String getTen() {
+        return ten;
+    }
+
+    public void setTen(String ten) {
+        this.ten = ten;
     }
 
     public double getTgVao() {
@@ -51,10 +61,12 @@ public class HoaDon {
     @Override
     public String toString() {
         return "HoaDon{" +
-                "tgVao = " + tgVao +
-                ", tgRa = " + tgRa +
-                ", tAnUong = " + tAnUong +
-                ", phong = " + phong.toString() +
+                "Tên = " + ten +
+                ", TGVào = " + tgVao +
+                ", TGRa = " + tgRa +
+                ", TiềnĂnUống = " + tAnUong +
+                ", Phòng = " + phong +
                 '}';
     }
+
 }
