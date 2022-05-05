@@ -48,9 +48,9 @@ public class QuanLyHoaDon {
         }
     }
 
-    public double tinhTien() {
-        return hoaDonList.add(n)
-    }
+//    public double tinhTien() {
+//        return hoaDonList.add(n)
+//    }
 
 
 
